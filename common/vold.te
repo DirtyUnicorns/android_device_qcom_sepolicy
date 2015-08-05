@@ -8,3 +8,4 @@ allow vold cache_file:dir { write add_name };
 allow vold cache_file:file { write create open };
 
 allow vold persist_file:dir { read getattr open ioctl };
+allow vold sensors_persist_file:dir getattr;
