@@ -66,7 +66,7 @@ get_prop(wcnss_service, hwservicemanager_prop)
 hal_client_domain(wcnss_service, hal_perf)
 
 # read persist.vendor.wigig.npt.enable
-get_prop(wcnss_service, wigig_prop);
+get_prop(wcnss_service, wigig_prop)
 
 # allow to read /sys/class/net file
 r_dir_file(wcnss_service, sysfs_net);
@@ -74,4 +74,4 @@ r_dir_file(wcnss_service, sysfs_net);
 set_prop(wcnss_service, wcnss_prop)
 
 # set property to vendor.wlan is enable
-set_prop(wcnss_service, vendor_wifi_prop);
+set_prop(wcnss_service, vendor_wifi_prop)
