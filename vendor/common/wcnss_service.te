@@ -75,3 +75,5 @@ set_prop(wcnss_service, wcnss_prop)
 
 # set property to vendor.wlan is enable
 set_prop(wcnss_service, vendor_wifi_prop)
+
+set_prop(wcnss_service, wcnss_prop)
