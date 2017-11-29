@@ -2,7 +2,7 @@
 # we don't want to force a reset of BOARD_SEPOLICY_DIRS
 #
 # If you want to use these policies, add a
-# 
+#
 # include device/qcom/sepolicy/sepolicy.mk
 #
 # to your device's BoardConfig. It is highly recommended that in case
