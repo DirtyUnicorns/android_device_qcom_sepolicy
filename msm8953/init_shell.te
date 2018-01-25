@@ -29,7 +29,6 @@
 # media_settings_xml_prop - to choose target specific media_profiles.xml
 # media_msm8956_version_prop - to choose target version specific media_codecs.xml
 
-set_prop(qti_init_shell, media_settings_xml_prop)
 set_prop(qti_init_shell, media_msm8953_version_prop)
 
 # For regionalization
