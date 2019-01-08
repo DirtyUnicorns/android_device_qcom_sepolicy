@@ -283,7 +283,7 @@ type qdma_socket, file_type;
 type qti_debugfs, fs_type, debugfs_type;
 
 # vendor radio files
-type vendor_radio_data_file, file_type, data_file_type;
+type vendor_radio_data_file, file_type, data_file_type, core_data_file_type;
 
 # vendor MBN files
 type vendor_mbn_data_file, file_type, data_file_type;
