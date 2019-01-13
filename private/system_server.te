@@ -44,3 +44,4 @@ add_service(system_server, regionalization_service);
 #add_service(system_server, vendor_perf_service);
 allow system_server vendor_perf_service:service_manager find;
 binder_call(system_server,qvrd);
+set_prop(system_server, qemu_hw_mainkeys)
