@@ -1,5 +1,5 @@
 # Board specific SELinux policy variable definitions
-SEPOLICY_PATH:= device/qcom/sepolicy-legacy-um
+SEPOLICY_PATH:= device/qcom/sepolicy-legacy
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR := \
     $(BOARD_PLAT_PUBLIC_SEPOLICY_DIR) \
     $(SEPOLICY_PATH)/generic/public
@@ -21,7 +21,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR := \
 PRODUCT_PUBLIC_SEPOLICY_DIRS := \
     $(PRODUCT_PUBLIC_SEPOLICY_DIRS) \
     $(SEPOLICY_PATH)/generic/product/public \
-    $(SEPOLICY_PATH)/qva/product/public 
+    $(SEPOLICY_PATH)/qva/product/public
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS := \
     $(PRODUCT_PRIVATE_SEPOLICY_DIRS) \
@@ -45,5 +45,3 @@ ifneq (,$(filter sdm660 msm8937 msm8953 msm8996 msm8998, $(TARGET_BOARD_PLATFORM
     BOARD_SEPOLICY_DIRS += $(SEPOLICY_PATH)/legacy/vendor/test
     endif
 endif
-
--include device/lineage/sepolicy/qcom/sepolicy.mk
